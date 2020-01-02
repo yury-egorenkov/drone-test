@@ -1,0 +1,9 @@
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: yego/node-server
+    auto_tag: true
+    username: yego
+    password:
+      from_secret: yego-hub-docker
